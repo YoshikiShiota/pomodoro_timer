@@ -1,0 +1,29 @@
+.frame {
+  padding-top: 20px;
+  font-family: 'Lora', serif;
+}
+.title {
+  text-align: center;
+}
+.time {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.button-area {
+  text-align: center;
+  .button {
+    font-size: 20px;
+    display: inline-block;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 50px;
+    color: #333;
+    background-color: #fff;
+  }
+  .button:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #333;
+  }
+}
