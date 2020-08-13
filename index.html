@@ -11,12 +11,18 @@
 <body>
   <div id="app" class="frame">
     <h1 class="title">Pomodoro Timer</h1>
-    <p class="time">{{timer}}</p>
+    <p class="time">
+      <span>{{ minutes }}</span>
+      <span>:</span>
+      <span>{{ seconds }}</span>
+    </p>
     <div class="button-area">
-      <button class="button">{{button}}</button>
+      <button class="button" v-on:click="setTimeQuarter(); start()" v-if="!timerOn">Start</button>
+      <button class="button" v-on:click="stop" v-if="timerOn">Stop</button>
     </div>
   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="js/app.js"></script>
 </html>
